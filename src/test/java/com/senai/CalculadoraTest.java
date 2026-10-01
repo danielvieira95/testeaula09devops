@@ -14,5 +14,13 @@ public class CalculadoraTest {
     // metodo assert Equals compara o resultado que esperamos com o resultado real
     assertEquals(5,resultado);
    }
+
+   @Test 
+   void testarMult(){
+      Calculadora calculadora = new Calculadora();
+      int res = calculadora.multiplicacao(4, 2);
+      assertEquals(8, res);
+
+   }
     
 }
